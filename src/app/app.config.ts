@@ -4,6 +4,32 @@ import { provideRouter } from '@angular/router';
 import { routes } from './app.routes';
 import { provideClientHydration } from '@angular/platform-browser';
 
+/* Google credentials  */
+import { SocialAuthServiceConfig } from '@abacritt/angularx-social-login';
+import { GoogleLoginProvider } from '@abacritt/angularx-social-login';
+import { environment } from "../enviroments/enviroments";
+
+
 export const appConfig: ApplicationConfig = {
-  providers: [provideRouter(routes), provideClientHydration()]
+  providers: [
+    {
+      provide: 'SocialAuthServiceConfig',
+      useValue: {
+        autoLogin: false,
+        providers: [
+          {
+            id: GoogleLoginProvider.PROVIDER_ID,
+            provider: new GoogleLoginProvider(
+              environment.client_id
+            )
+          }
+        ],
+        onError: (error) => {
+          console.error(error);
+        }
+      }
+    } as SocialAuthServiceConfig,
+    provideRouter(routes),
+    provideClientHydration()
+  ]
 };
