@@ -27,8 +27,8 @@ export const appConfig: ApplicationConfig = {
         onError: (error) => {
           console.error(error);
         }
-      }
-    } as SocialAuthServiceConfig,
+      } as SocialAuthServiceConfig
+    },
     provideRouter(routes),
     provideClientHydration()
   ]
