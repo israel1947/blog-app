@@ -1,0 +1,20 @@
+<div class="container--card flex items-center justify-center gap-[10px]">
+  <div class="container-card--img w-[200px]">
+    <img class="rounded-[8px]" [src]="post.image" [alt]="post.title">
+  </div>
+  <div class="card-content w-[200]">
+    <div class="container-card--info flex flex-col gap-2">
+      <div class="container-card--title flex content-center justify-between">
+        <h2 class="font-bold">{{post.title}}</h2>
+        <span class="text-gray-400">{{post.created_at | customDate}} ago</span>
+      </div>
+      <div class="container-card--description">
+        <p>{{post.description}}</p>
+      </div>
+      <div class="container-card--tag flex content-center justify-between">
+        <strong class="text-blue-400">{{post.category}}</strong>
+        <span class="text-gray-400">{{post.last_read_at | customDate}} read</span>
+      </div>
+    </div>
+  </div>
+</div>

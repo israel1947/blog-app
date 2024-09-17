@@ -8,6 +8,8 @@ import { provideClientHydration } from '@angular/platform-browser';
 import { SocialAuthServiceConfig } from '@abacritt/angularx-social-login';
 import { GoogleLoginProvider } from '@abacritt/angularx-social-login';
 import { environment } from "../enviroments/enviroments";
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { provideHttpClient } from '@angular/common/http';
 
 
 export const appConfig: ApplicationConfig = {
@@ -30,6 +32,8 @@ export const appConfig: ApplicationConfig = {
       } as SocialAuthServiceConfig
     },
     provideRouter(routes),
-    provideClientHydration()
+    provideClientHydration(), 
+    provideAnimationsAsync(),
+    provideHttpClient()
   ]
 };

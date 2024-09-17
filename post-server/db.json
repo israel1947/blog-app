@@ -1,0 +1,478 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Understanding Angular Directives",
+      "image": "https://images.unsplash.com/photo-1561736778-92e52a7769ef?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "description": "A comprehensive guide to understanding and implementing Angular directives in your projects.",
+      "tags": [
+        "Angular",
+        "Directives",
+        "JavaScript"
+      ],
+      "created_at": "2024-08-15T10:30:00Z",
+      "last_read_at": "2024-09-09T14:50:00Z",
+      "comments": 12,
+      "likes": 58,
+      "views": 120,
+      "category": "Tecnología",
+      "author": {
+        "name": "Lucía Smith",
+        "photo": "https://example.com/images/lucia-smith.jpg"
+      }
+    },
+    {
+      "id": 2,
+      "title": "10 Tips for Responsive Web Design",
+      "image": "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "description": "Learn the top 10 tips for making your web designs responsive and user-friendly.",
+      "tags": [
+        "Web Design",
+        "CSS",
+        "Responsive"
+      ],
+      "created_at": "2024-08-10T12:00:00Z",
+      "last_read_at": "2024-09-08T09:20:00Z",
+      "comments": 8,
+      "likes": 35,
+      "views": 85,
+      "category": "Tecnología",
+      "author": {
+        "name": "Juan Pérez",
+        "photo": "https://example.com/images/juan-perez.jpg"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Mastering JavaScript Async/Await",
+      "image": "https://images.unsplash.com/photo-1516116412344-6663387e8590?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "description": "Async/Await is a powerful tool in JavaScript for handling asynchronous operations. Learn how to use it effectively.",
+      "tags": [
+        "JavaScript",
+        "Async",
+        "Programming"
+      ],
+      "created_at": "2024-08-20T08:45:00Z",
+      "last_read_at": "2024-09-10T11:30:00Z",
+      "comments": 20,
+      "likes": 102,
+      "views": 200,
+      "category": "Tecnología",
+      "author": {
+        "name": "Maria Lopez",
+        "photo": "https://example.com/images/maria-lopez.jpg"
+      }
+    },
+    {
+      "id": 4,
+      "title": "The Future of AI in Web Development",
+      "image": "https://plus.unsplash.com/premium_photo-1677269465314-d5d2247a0b0c?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "description": "Exploring how artificial intelligence is revolutionizing the field of web development and what the future holds.",
+      "tags": [
+        "AI",
+        "Web Development",
+        "Technology"
+      ],
+      "created_at": "2024-08-05T14:00:00Z",
+      "last_read_at": "2024-09-06T13:15:00Z",
+      "comments": 15,
+      "likes": 80,
+      "views": 150,
+      "category": "Tecnología",
+      "author": {
+        "name": "Anna Gomez",
+        "photo": "https://example.com/images/anna-gomez.jpg"
+      }
+    },
+    {
+      "id": 5,
+      "title": "Building Accessible Websites: A Complete Guide",
+      "image": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1510&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "description": "Learn how to create accessible websites that are usable by everyone, regardless of their abilities.",
+      "tags": [
+        "Accessibility",
+        "Web Design",
+        "Best Practices"
+      ],
+      "created_at": "2024-08-12T09:30:00Z",
+      "last_read_at": "2024-09-08T16:40:00Z",
+      "comments": 9,
+      "likes": 45,
+      "views": 95,
+      "category": "Tecnología",
+      "author": {
+        "name": "Carlos Martinez",
+        "photo": "https://example.com/images/carlos-martinez.jpg"
+      }
+    },
+    {
+      "id": 6,
+      "title": "CSS Grid vs. Flexbox: Which Should You Use?",
+      "image": "https://images.unsplash.com/photo-1711659829586-fa5d64ac9b7a?q=80&w=1473&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "description": "Compare CSS Grid and Flexbox to understand which layout system to use for different scenarios.",
+      "tags": [
+        "CSS",
+        "Grid",
+        "Flexbox"
+      ],
+      "created_at": "2024-08-02T08:00:00Z",
+      "last_read_at": "2024-09-07T18:20:00Z",
+      "comments": 30,
+      "likes": 120,
+      "views": 250,
+      "category": "Tecnología",
+      "author": {
+        "name": "Michael Brown",
+        "photo": "https://example.com/images/michael-brown.jpg"
+      }
+    },
+    {
+      "id": 7,
+      "title": "State Management in Modern Web Applications",
+      "image": "https://plus.unsplash.com/premium_photo-1720287601920-ee8c503af775?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "description": "A detailed overview of state management solutions in modern web development, including Redux, Vuex, and NgRx.",
+      "tags": [
+        "State Management",
+        "Web Development",
+        "JavaScript"
+      ],
+      "created_at": "2024-08-28T13:45:00Z",
+      "last_read_at": "2024-09-10T12:30:00Z",
+      "comments": 27,
+      "likes": 85,
+      "views": 180,
+      "category": "Tecnología",
+      "author": {
+        "name": "Sophie Turner",
+        "photo": "https://example.com/images/sophie-turner.jpg"
+      }
+    },
+    {
+      "id": 8,
+      "title": "A Guide to Progressive Web Apps (PWAs)",
+      "image": "https://images.unsplash.com/photo-1618761714954-0b8cd0026356?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "description": "Understand what Progressive Web Apps are, their benefits, and how to build one from scratch.",
+      "tags": [
+        "PWAs",
+        "Web Development",
+        "JavaScript"
+      ],
+      "created_at": "2024-08-14T10:00:00Z",
+      "last_read_at": "2024-09-09T15:00:00Z",
+      "comments": 14,
+      "likes": 65,
+      "views": 140,
+      "category": "Tecnología",
+      "author": {
+        "name": "David Kim",
+        "photo": "https://example.com/images/david-kim.jpg"
+      }
+    },
+    {
+      "id": 9,
+      "title": "Demystifying Cloud Native Development",
+      "image": "https://images.unsplash.com/photo-1667984390553-7f439e6ae401?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "description": "A beginner's guide to cloud-native development, focusing on containerization, microservices, and DevOps.",
+      "tags": [
+        "Cloud Native",
+        "DevOps",
+        "Microservices"
+      ],
+      "created_at": "2024-08-22T09:15:00Z",
+      "last_read_at": "2024-09-07T11:55:00Z",
+      "comments": 22,
+      "likes": 78,
+      "views": 160,
+      "category": "Tecnología",
+      "author": {
+        "name": "Isabella Santos",
+        "photo": "https://example.com/images/isabella-santos.jpg"
+      }
+    },
+    {
+      "id": 10,
+      "title": "Introduction to GraphQL for Beginners",
+      "image": "https://cdn.hashnode.com/res/hashnode/image/upload/v1617264296534/9o-zqrCgn.png?auto=compress,format&format=webp",
+      "description": "Learn the basics of GraphQL and how to use it as a more efficient alternative to REST APIs.",
+      "tags": [
+        "GraphQL",
+        "APIs",
+        "Web Development"
+      ],
+      "created_at": "2024-08-07T11:00:00Z",
+      "last_read_at": "2024-09-08T13:30:00Z",
+      "comments": 11,
+      "likes": 70,
+      "views": 135,
+      "category": "Tecnología",
+      "author": {
+        "name": "Laura Fisher",
+        "photo": "https://example.com/images/laura-fisher.jpg"
+      }
+    },
+    {
+      "id": 11,
+      "title": "The Benefits of Regular Exercise",
+      "image": "https://plus.unsplash.com/premium_photo-1664301376084-643810674463?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "description": "Explore the physical and mental benefits of incorporating regular exercise into your daily routine.",
+      "tags": [
+        "Health",
+        "Exercise",
+        "Fitness"
+      ],
+      "created_at": "2024-08-25T07:30:00Z",
+      "last_read_at": "2024-09-09T09:45:00Z",
+      "comments": 19,
+      "likes": 88,
+      "views": 175,
+      "category": "Salud",
+      "author": {
+        "name": "Emily White",
+        "photo": "https://example.com/images/emily-white.jpg"
+      }
+    },
+    {
+      "id": 12,
+      "title": "Investing Basics: How to Start in the Stock Market",
+      "image": "https://images.unsplash.com/photo-1579226905180-636b76d96082?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "description": "A beginner's guide to investing in the stock market, including strategies, risks, and how to get started.",
+      "tags": [
+        "Investing",
+        "Finance",
+        "Stock Market"
+      ],
+      "created_at": "2024-08-30T12:00:00Z",
+      "last_read_at": "2024-09-09T16:00:00Z",
+      "comments": 13,
+      "likes": 50,
+      "views": 110,
+      "category": "Finanzas",
+      "author": {
+        "name": "Robert Johnson",
+        "photo": "https://example.com/images/robert-johnson.jpg"
+      }
+    },
+    {
+      "id": 13,
+      "title": "Exploring the World of Modern Art",
+      "image": "https://plus.unsplash.com/premium_photo-1706023303251-d1fece103464?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "description": "An insightful look into modern art, its movements, and its impact on contemporary culture.",
+      "tags": [
+        "Art",
+        "Modern Art",
+        "Culture"
+      ],
+      "created_at": "2024-08-16T15:00:00Z",
+      "last_read_at": "2024-09-05T14:00:00Z",
+      "comments": 7,
+      "likes": 25,
+      "views": 60,
+      "category": "Arte",
+      "author": {
+        "name": "Sophia Lee",
+        "photo": "https://example.com/images/sophia-lee.jpg"
+      }
+    },
+    {
+      "id": 14,
+      "title": "The Essentials of Financial Planning",
+      "image": "https://plus.unsplash.com/premium_photo-1688822008833-b7e5064e2664?q=80&w=1482&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "description": "Learn the key elements of financial planning and how to manage your finances effectively.",
+      "tags": [
+        "Finance",
+        "Planning",
+        "Budgeting"
+      ],
+      "created_at": "2024-08-12T09:00:00Z",
+      "last_read_at": "2024-09-08T12:30:00Z",
+      "comments": 22,
+      "likes": 95,
+      "views": 190,
+      "category": "Finanzas",
+      "author": {
+        "name": "Linda Parker",
+        "photo": "https://example.com/images/linda-parker.jpg"
+      }
+    },
+    {
+      "id": 15,
+      "title": "Effective Study Techniques for Students",
+      "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "description": "Discover effective study techniques to improve your learning and academic performance.",
+      "tags": [
+        "Education",
+        "Study Techniques",
+        "Students"
+      ],
+      "created_at": "2024-08-18T10:00:00Z",
+      "last_read_at": "2024-09-09T11:00:00Z",
+      "comments": 16,
+      "likes": 70,
+      "views": 140,
+      "category": "Educación",
+      "author": {
+        "name": "James Davis",
+        "photo": "https://example.com/images/james-davis.jpg"
+      }
+    },
+    {
+      "id": 16,
+      "title": "Exploring the Rich Culture of Latin America",
+      "image": "https://plus.unsplash.com/premium_photo-1701203198291-99350f57ccff?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "description": "An exploration of the diverse and vibrant cultures of Latin America, including its traditions and history.",
+      "tags": [
+        "Culture",
+        "Latin America",
+        "Traditions"
+      ],
+      "created_at": "2024-08-09T14:00:00Z",
+      "last_read_at": "2024-09-10T08:00:00Z",
+      "comments": 24,
+      "likes": 90,
+      "views": 165,
+      "category": "Cultura",
+      "author": {
+        "name": "Olivia Martinez",
+        "photo": "https://example.com/images/olivia-martinez.jpg"
+      }
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "post_id": 1,
+      "author": "John Doe",
+      "author_photo": "https://example.com/images/john-doe.jpg",
+      "content": "Great article! I learned a lot about Angular directives.",
+      "created_at": "2024-09-09T15:30:00Z"
+    },
+    {
+      "id": 2,
+      "post_id": 1,
+      "author": "Jane Smith",
+      "author_photo": "https://example.com/images/jane-smith.jpg",
+      "content": "Very informative, thanks for sharing!",
+      "created_at": "2024-09-09T16:00:00Z"
+    },
+    {
+      "id": 3,
+      "post_id": 2,
+      "author": "Alice Brown",
+      "author_photo": "https://example.com/images/alice-brown.jpg",
+      "content": "I love the tips for responsive design, they are very helpful!",
+      "created_at": "2024-09-08T10:30:00Z"
+    },
+    {
+      "id": 4,
+      "post_id": 3,
+      "author": "Bob Johnson",
+      "author_photo": "https://example.com/images/bob-johnson.jpg",
+      "content": "Async/Await was confusing to me before, but this article made it clear.",
+      "created_at": "2024-09-10T12:00:00Z"
+    },
+    {
+      "id": 5,
+      "post_id": 4,
+      "author": "Sarah Connor",
+      "author_photo": "https://example.com/images/sarah-connor.jpg",
+      "content": "AI in web development is such an exciting topic!",
+      "created_at": "2024-09-06T15:30:00Z"
+    },
+    {
+      "id": 6,
+      "post_id": 5,
+      "author": "Michael Scott",
+      "author_photo": "https://example.com/images/michael-scott.jpg",
+      "content": "Accessibility is so important, thanks for covering this topic.",
+      "created_at": "2024-09-08T17:00:00Z"
+    },
+    {
+      "id": 7,
+      "post_id": 6,
+      "author": "Dwight Schrute",
+      "author_photo": "https://example.com/images/dwight-schrute.jpg",
+      "content": "I'm still trying to decide between Grid and Flexbox, this helped.",
+      "created_at": "2024-09-07T19:00:00Z"
+    },
+    {
+      "id": 8,
+      "post_id": 7,
+      "author": "Pam Beesly",
+      "author_photo": "https://example.com/images/pam-beesly.jpg",
+      "content": "State management is such a complex topic, this breaks it down nicely.",
+      "created_at": "2024-09-10T13:00:00Z"
+    },
+    {
+      "id": 9,
+      "post_id": 8,
+      "author": "Jim Halpert",
+      "author_photo": "https://example.com/images/jim-halpert.jpg",
+      "content": "PWAs are the future! Great article.",
+      "created_at": "2024-09-09T15:45:00Z"
+    },
+    {
+      "id": 10,
+      "post_id": 9,
+      "author": "Stanley Hudson",
+      "author_photo": "https://example.com/images/stanley-hudson.jpg",
+      "content": "I'm new to cloud-native development, this is a great introduction.",
+      "created_at": "2024-09-07T12:30:00Z"
+    },
+    {
+      "id": 11,
+      "post_id": 10,
+      "author": "Kelly Kapoor",
+      "author_photo": "https://example.com/images/kelly-kapoor.jpg",
+      "content": "GraphQL looks interesting, I might try it out!",
+      "created_at": "2024-09-08T14:00:00Z"
+    },
+    {
+      "id": 12,
+      "post_id": 11,
+      "author": "Ryan Howard",
+      "author_photo": "https://example.com/images/ryan-howard.jpg",
+      "content": "Regular exercise has changed my life, great to see it covered here.",
+      "created_at": "2024-09-09T10:00:00Z"
+    },
+    {
+      "id": 13,
+      "post_id": 12,
+      "author": "Meredith Palmer",
+      "author_photo": "https://example.com/images/meredith-palmer.jpg",
+      "content": "I never knew where to start with investing, thanks for the guide!",
+      "created_at": "2024-09-09T17:30:00Z"
+    },
+    {
+      "id": 14,
+      "post_id": 13,
+      "author": "Angela Martin",
+      "author_photo": "https://example.com/images/angela-martin.jpg",
+      "content": "Modern art is fascinating, thanks for this exploration.",
+      "created_at": "2024-09-05T15:00:00Z"
+    },
+    {
+      "id": 15,
+      "post_id": 14,
+      "author": "Oscar Martinez",
+      "author_photo": "https://example.com/images/oscar-martinez.jpg",
+      "content": "Financial planning is crucial, thanks for the detailed overview.",
+      "created_at": "2024-09-08T13:30:00Z"
+    },
+    {
+      "id": 16,
+      "post_id": 15,
+      "author": "Toby Flenderson",
+      "author_photo": "https://example.com/images/toby-flenderson.jpg",
+      "content": "Effective study techniques can really make a difference!",
+      "created_at": "2024-09-09T12:30:00Z"
+    },
+    {
+      "id": 17,
+      "post_id": 16,
+      "author": "Phyllis Vance",
+      "author_photo": "https://example.com/images/phyllis-vance.jpg",
+      "content": "Latin American culture is so diverse and rich, great article!",
+      "created_at": "2024-09-10T09:00:00Z"
+    }
+  ]
+}
