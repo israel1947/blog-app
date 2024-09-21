@@ -15,4 +15,8 @@ export class PostsService{
   getAllPosts() {
     return this.http.get<Post>(`${this.URL}/posts`);
   };
+
+  getPostById(id:number){
+    return this.http.get<Post>(`${this.URL}/posts/${id}`);
+  };
 }

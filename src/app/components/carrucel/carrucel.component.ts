@@ -2,13 +2,14 @@ import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { CustomDatePipe } from '../../pipes/custom-date.pipe';
 import { CarrucelData } from '../../interfaces/interface';
+import { RouterModule } from '@angular/router';
 
 
 
 @Component({
   selector: 'app-carrucel',
   standalone: true,
-  imports: [CommonModule, CustomDatePipe],
+  imports: [CommonModule, CustomDatePipe, RouterModule],
   templateUrl: './carrucel.component.html',
   styleUrl: './carrucel.component.scss'
 })

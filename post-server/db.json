@@ -18,7 +18,7 @@
       "category": "Tecnología",
       "author": {
         "name": "Lucía Smith",
-        "photo": "https://example.com/images/lucia-smith.jpg"
+        "photo": "https://randomuser.me/api/portraits/women/41.jpg"
       }
     },
     {
@@ -39,7 +39,7 @@
       "category": "Tecnología",
       "author": {
         "name": "Juan Pérez",
-        "photo": "https://example.com/images/juan-perez.jpg"
+        "photo": "https://randomuser.me/api/portraits/men/0.jpg"
       }
     },
     {
@@ -60,7 +60,7 @@
       "category": "Tecnología",
       "author": {
         "name": "Maria Lopez",
-        "photo": "https://example.com/images/maria-lopez.jpg"
+        "photo": "https://randomuser.me/api/portraits/women/19.jpg"
       }
     },
     {
@@ -81,7 +81,7 @@
       "category": "Tecnología",
       "author": {
         "name": "Anna Gomez",
-        "photo": "https://example.com/images/anna-gomez.jpg"
+        "photo": "https://randomuser.me/api/portraits/women/29.jpg"
       }
     },
     {
@@ -102,7 +102,7 @@
       "category": "Tecnología",
       "author": {
         "name": "Carlos Martinez",
-        "photo": "https://example.com/images/carlos-martinez.jpg"
+        "photo": "https://randomuser.me/api/portraits/men/42.jpg"
       }
     },
     {
@@ -123,7 +123,7 @@
       "category": "Tecnología",
       "author": {
         "name": "Michael Brown",
-        "photo": "https://example.com/images/michael-brown.jpg"
+        "photo": "https://randomuser.me/api/portraits/men/6.jpg"
       }
     },
     {
@@ -144,7 +144,7 @@
       "category": "Tecnología",
       "author": {
         "name": "Sophie Turner",
-        "photo": "https://example.com/images/sophie-turner.jpg"
+        "photo": "https://randomuser.me/api/portraits/women/9.jpg"
       }
     },
     {
@@ -165,7 +165,7 @@
       "category": "Tecnología",
       "author": {
         "name": "David Kim",
-        "photo": "https://example.com/images/david-kim.jpg"
+        "photo": "https://randomuser.me/api/portraits/men/50.jpg"
       }
     },
     {
@@ -186,7 +186,7 @@
       "category": "Tecnología",
       "author": {
         "name": "Isabella Santos",
-        "photo": "https://example.com/images/isabella-santos.jpg"
+        "photo": "https://randomuser.me/api/portraits/women/5.jpg"
       }
     },
     {
@@ -207,7 +207,7 @@
       "category": "Tecnología",
       "author": {
         "name": "Laura Fisher",
-        "photo": "https://example.com/images/laura-fisher.jpg"
+        "photo": "https://randomuser.me/api/portraits/women/10.jpg"
       }
     },
     {
@@ -228,7 +228,7 @@
       "category": "Salud",
       "author": {
         "name": "Emily White",
-        "photo": "https://example.com/images/emily-white.jpg"
+        "photo": "https://randomuser.me/api/portraits/women/7.jpg"
       }
     },
     {
@@ -249,7 +249,7 @@
       "category": "Finanzas",
       "author": {
         "name": "Robert Johnson",
-        "photo": "https://example.com/images/robert-johnson.jpg"
+        "photo": "https://randomuser.me/api/portraits/men/36.jpg"
       }
     },
     {
@@ -270,7 +270,7 @@
       "category": "Arte",
       "author": {
         "name": "Sophia Lee",
-        "photo": "https://example.com/images/sophia-lee.jpg"
+        "photo": "https://randomuser.me/api/portraits/women/6.jpg"
       }
     },
     {
@@ -291,7 +291,7 @@
       "category": "Finanzas",
       "author": {
         "name": "Linda Parker",
-        "photo": "https://example.com/images/linda-parker.jpg"
+        "photo": "https://randomuser.me/api/portraits/women/4.jpg"
       }
     },
     {
@@ -312,7 +312,7 @@
       "category": "Educación",
       "author": {
         "name": "James Davis",
-        "photo": "https://example.com/images/james-davis.jpg"
+        "photo": "https://randomuser.me/api/portraits/men/46.jpg"
       }
     },
     {
@@ -333,7 +333,7 @@
       "category": "Cultura",
       "author": {
         "name": "Olivia Martinez",
-        "photo": "https://example.com/images/olivia-martinez.jpg"
+        "photo": "https://randomuser.me/api/portraits/women/25.jpg"
       }
     }
   ],
@@ -341,16 +341,16 @@
     {
       "id": 1,
       "post_id": 1,
-      "author": "John Doe",
-      "author_photo": "https://example.com/images/john-doe.jpg",
+      "author": "Ricky Watkins",
+      "author_photo": "https://randomuser.me/api/portraits/men/44.jpg",
       "content": "Great article! I learned a lot about Angular directives.",
       "created_at": "2024-09-09T15:30:00Z"
     },
     {
       "id": 2,
       "post_id": 1,
-      "author": "Jane Smith",
-      "author_photo": "https://example.com/images/jane-smith.jpg",
+      "author": "April Campbell",
+      "author_photo": "https://randomuser.me/api/portraits/women/62.jpg",
       "content": "Very informative, thanks for sharing!",
       "created_at": "2024-09-09T16:00:00Z"
     },
@@ -358,7 +358,7 @@
       "id": 3,
       "post_id": 2,
       "author": "Alice Brown",
-      "author_photo": "https://example.com/images/alice-brown.jpg",
+      "author_photo": "https://randomuser.me/api/portraits/men/40.jpg",
       "content": "I love the tips for responsive design, they are very helpful!",
       "created_at": "2024-09-08T10:30:00Z"
     },
@@ -366,7 +366,7 @@
       "id": 4,
       "post_id": 3,
       "author": "Bob Johnson",
-      "author_photo": "https://example.com/images/bob-johnson.jpg",
+      "author_photo": "https://randomuser.me/api/portraits/men/30.jpg",
       "content": "Async/Await was confusing to me before, but this article made it clear.",
       "created_at": "2024-09-10T12:00:00Z"
     },
@@ -374,7 +374,7 @@
       "id": 5,
       "post_id": 4,
       "author": "Sarah Connor",
-      "author_photo": "https://example.com/images/sarah-connor.jpg",
+      "author_photo": "https://randomuser.me/api/portraits/women/56.jpg",
       "content": "AI in web development is such an exciting topic!",
       "created_at": "2024-09-06T15:30:00Z"
     },
@@ -382,15 +382,15 @@
       "id": 6,
       "post_id": 5,
       "author": "Michael Scott",
-      "author_photo": "https://example.com/images/michael-scott.jpg",
+      "author_photo": "https://randomuser.me/api/portraits/men/62.jpg",
       "content": "Accessibility is so important, thanks for covering this topic.",
       "created_at": "2024-09-08T17:00:00Z"
     },
     {
       "id": 7,
       "post_id": 6,
-      "author": "Dwight Schrute",
-      "author_photo": "https://example.com/images/dwight-schrute.jpg",
+      "author": "Patsy Lopez",
+      "author_photo": "https://randomuser.me/api/portraits/women/30.jpg",
       "content": "I'm still trying to decide between Grid and Flexbox, this helped.",
       "created_at": "2024-09-07T19:00:00Z"
     },
@@ -398,7 +398,7 @@
       "id": 8,
       "post_id": 7,
       "author": "Pam Beesly",
-      "author_photo": "https://example.com/images/pam-beesly.jpg",
+      "author_photo": "https://randomuser.me/api/portraits/women/59.jpg",
       "content": "State management is such a complex topic, this breaks it down nicely.",
       "created_at": "2024-09-10T13:00:00Z"
     },
@@ -406,7 +406,7 @@
       "id": 9,
       "post_id": 8,
       "author": "Jim Halpert",
-      "author_photo": "https://example.com/images/jim-halpert.jpg",
+      "author_photo": "https://randomuser.me/api/portraits/women/70.jpg",
       "content": "PWAs are the future! Great article.",
       "created_at": "2024-09-09T15:45:00Z"
     },
@@ -414,7 +414,7 @@
       "id": 10,
       "post_id": 9,
       "author": "Stanley Hudson",
-      "author_photo": "https://example.com/images/stanley-hudson.jpg",
+      "author_photo": "https://randomuser.me/api/portraits/men/4.jpg",
       "content": "I'm new to cloud-native development, this is a great introduction.",
       "created_at": "2024-09-07T12:30:00Z"
     },
@@ -422,7 +422,7 @@
       "id": 11,
       "post_id": 10,
       "author": "Kelly Kapoor",
-      "author_photo": "https://example.com/images/kelly-kapoor.jpg",
+      "author_photo": "https://randomuser.me/api/portraits/men/32.jpg",
       "content": "GraphQL looks interesting, I might try it out!",
       "created_at": "2024-09-08T14:00:00Z"
     },
@@ -430,7 +430,7 @@
       "id": 12,
       "post_id": 11,
       "author": "Ryan Howard",
-      "author_photo": "https://example.com/images/ryan-howard.jpg",
+      "author_photo": "https://randomuser.me/api/portraits/men/4.jpg",
       "content": "Regular exercise has changed my life, great to see it covered here.",
       "created_at": "2024-09-09T10:00:00Z"
     },
@@ -438,7 +438,7 @@
       "id": 13,
       "post_id": 12,
       "author": "Meredith Palmer",
-      "author_photo": "https://example.com/images/meredith-palmer.jpg",
+      "author_photo": "https://randomuser.me/api/portraits/women/75.jpg",
       "content": "I never knew where to start with investing, thanks for the guide!",
       "created_at": "2024-09-09T17:30:00Z"
     },
@@ -446,7 +446,7 @@
       "id": 14,
       "post_id": 13,
       "author": "Angela Martin",
-      "author_photo": "https://example.com/images/angela-martin.jpg",
+      "author_photo": "https://randomuser.me/api/portraits/women/80.jpg",
       "content": "Modern art is fascinating, thanks for this exploration.",
       "created_at": "2024-09-05T15:00:00Z"
     },
@@ -454,7 +454,7 @@
       "id": 15,
       "post_id": 14,
       "author": "Oscar Martinez",
-      "author_photo": "https://example.com/images/oscar-martinez.jpg",
+      "author_photo": "https://randomuser.me/api/portraits/men/75.jpg",
       "content": "Financial planning is crucial, thanks for the detailed overview.",
       "created_at": "2024-09-08T13:30:00Z"
     },
@@ -462,7 +462,7 @@
       "id": 16,
       "post_id": 15,
       "author": "Toby Flenderson",
-      "author_photo": "https://example.com/images/toby-flenderson.jpg",
+      "author_photo": "https://randomuser.me/api/portraits/men/77.jpg",
       "content": "Effective study techniques can really make a difference!",
       "created_at": "2024-09-09T12:30:00Z"
     },
@@ -470,7 +470,7 @@
       "id": 17,
       "post_id": 16,
       "author": "Phyllis Vance",
-      "author_photo": "https://example.com/images/phyllis-vance.jpg",
+      "author_photo": "https://randomuser.me/api/portraits/women/75.jpg",
       "content": "Latin American culture is so diverse and rich, great article!",
       "created_at": "2024-09-10T09:00:00Z"
     }

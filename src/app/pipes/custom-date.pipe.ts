@@ -6,7 +6,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class CustomDatePipe implements PipeTransform {
 
-  transform(createdDate: string):unknown {
+  transform(createdDate: any):unknown {
     const now = new Date();
     const diffInMilliseconds = now.getTime() - new Date(createdDate).getTime();
     const diffInMinutes = Math.floor(diffInMilliseconds / (1000 * 60));

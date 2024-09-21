@@ -1,8 +1,8 @@
 <section class="relative max-[900px]:w-[100%]">
   @for(slidea of slideData2; track $index ){
   <div class="relative max-[900px]:w-[100vw]" *ngIf="$index === currentIndex">
-    <div class="carrucel-content w-[100%] h-[350px] rounded bg-cover bg-no-repeat object-center"
-      [ngStyle]="{'background-image': 'url(' + slidea.image + ')'}" >
+    <div class="carrucel-content w-[100%] h-[350px] rounded bg-cover bg-no-repeat object-center cursor-pointer"
+      [ngStyle]="{'background-image': 'url(' + slidea.image + ')'}"  [routerLink]="['/post', slidea.id]">
     </div>
     <div
       class="carrucel-info absolute left-0 bottom-0 w-[300px] p-2 backdrop-opacity-10 backdrop-invert bg-white/30 rounded-xl">
@@ -11,7 +11,7 @@
         <span>{{slidea.last_read_at | customDate}} ago</span>
       </div>
       <div class="description my-3 flex flex-col gap-2">
-        <h3 class="font-bold text-blue-600">{{slidea.title}}</h3>
+        <h3 class="font-bold text-blue-600 cursor-pointer" [routerLink]="['/post', slidea.id]">{{slidea.title}}</h3>
         <p>{{slidea.description}}</p>
       </div>
       <div class="acctions flex justify-between items-center">
@@ -30,5 +30,3 @@
   </div>
   }
 </section>
-
-<!-- mediumDate -->

@@ -1,4 +1,4 @@
-<div class="container--card flex items-center justify-center gap-[10px]">
+<div class="container--card flex items-center justify-center gap-[10px] cursor-pointer" [routerLink]="['/post', post.id]">
   <div class="container-card--img w-[200px]">
     <img class="rounded-[8px]" [src]="post.image" [alt]="post.title">
   </div>
