@@ -1,11 +1,12 @@
-<mat-tab-group>
+<mat-tab-group (selectedIndexChange)="tabNav($event)">
   @for (item of listItems; track $index) {
-  <mat-tab label="{{item}}"> {{item}} </mat-tab>
+  <mat-tab label="{{item}}" ></mat-tab>
   }
 </mat-tab-group>
 
 
-<section class="w-[100%] px-[1rem]">
+<section class="w-[100%] px-[1rem] mt-8">
+ @if (posts.length>0) {
   <div class="flex gap-4 max-[900px]:flex-col items-center">
     <div class="container--carrucel basis-[60%]">
       <app-carrucel [slideData2]="slideData" />
@@ -16,4 +17,9 @@
       }
     </div>
   </div>
+ }@else{
+  <div class="flex items-center justify-center">
+    <h1 class="text-blue-500 font-bold text-3xl">No hay nada</h1>
+  </div>
+ }
 </section>
