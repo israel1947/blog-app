@@ -7,10 +7,17 @@ import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-card',
   standalone: true,
-  imports: [ CommonModule, CustomDatePipe, RouterModule],
+  imports: [CommonModule, CustomDatePipe, RouterModule],
   templateUrl: './card.component.html',
   styleUrl: './card.component.scss'
 })
 export class CardComponent {
-  @Input() post!:any;
+  @Input() post!: any;
+  @Input() classType!: string[];
+  @Input() cardPrimary!: boolean;
+  @Input() cardSecond!: boolean;
+  @Input() cardTerthy!: boolean;
+
+
+
 }

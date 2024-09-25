@@ -13,8 +13,8 @@ export class PostsService{
 
   constructor(private http: HttpClient) { };
 
-  getAllPosts() {
-    return this.http.get<[]>(`${this.URL}/posts`);
+  getAllPosts():Observable<Post[]> {
+    return this.http.get<Post[]>(`${this.URL}/posts`);
   };
 
   getPostById(id:number){
@@ -25,7 +25,7 @@ export class PostsService{
     return this.http.get<Comment[]>(`${this.URL}/comments?post_id=${post_id}`);
   };
 
-  getPostByCategory(category:string):Observable<Post[] | CarrucelData[]>{
-    return this.http.get<Post[] | CarrucelData[]>(`${this.URL}/posts?category=${category}`);
+  getPostByCategory(category:string):Observable<Post[]>{
+    return this.http.get<Post[]>(`${this.URL}/posts?category=${category}`);
   };
 }
