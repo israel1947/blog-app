@@ -1,9 +1,13 @@
-import { Component, ElementRef, Renderer2, ViewChild } from '@angular/core';
+import { Component, ElementRef, inject, Renderer2, viewChild, ViewChild } from '@angular/core';
+import { MatAccordion, MatExpansionModule } from '@angular/material/expansion';
+import { MatIconModule } from '@angular/material/icon';
+import { PerfilComponent } from '../../components/perfil/perfil.component';
+
 
 @Component({
   selector: 'app-nav',
   standalone: true,
-  imports: [],
+  imports: [MatExpansionModule, MatIconModule, MatAccordion, PerfilComponent],
   templateUrl: './nav.component.html',
   styleUrl: './nav.component.scss'
 })
@@ -11,7 +15,10 @@ export class NavComponent {
 
   @ViewChild('menuItems') menuItems!: ElementRef;
   private click = false;
-  constructor(private render: Renderer2) { };
+  isOpen = false;
+  private render: Renderer2 = inject(Renderer2);
+
+  accordion = viewChild.required(MatAccordion);
 
   funMenu() {
     this.click = !this.click;
@@ -21,4 +28,6 @@ export class NavComponent {
       this.render.removeClass(this.menuItems.nativeElement, "enable");
     }
   }
+
+ 
 }

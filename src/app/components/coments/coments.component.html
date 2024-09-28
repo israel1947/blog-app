@@ -1,6 +1,9 @@
 <article>
   <div class="w-full max-w-xs  bg-white shadow-md rounded p-4">
+   <div class="title flex items-center justify-between">
     <h3 class="font-bold text-2xl">Coment Field</h3>
+    <button (click)="close(valueClick?.value)" ><i class="ri-close-circle-line ri-xl"></i></button>
+   </div>
     @for (coment of comentData; track $index) {
     <div class="coments p-4">
       <div class="perfil-user">

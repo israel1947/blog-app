@@ -1,0 +1,26 @@
+<div class="avatar-perifl-img w-[60px] h-[60px] cursor-pointer flex items-center">
+  <picture>
+    <img class="rounded-full" src="https://randomuser.me/api/portraits/women/71.jpg" alt="">
+  </picture>
+  <button (click)="funMenuPerfil()">
+    <i class="ri-arrow-down-s-fill ri-xl text-white"></i>
+  </button>
+  @if (isOpen) {
+  <div class="absolute right-0 mt-[15rem] w-48 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 z-50 ">
+    <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+      <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">
+        Mi Perfil
+      </a>
+      <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">
+        Configuraciones
+      </a>
+      <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">
+        Mensajes
+      </a>
+      <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">
+        Cerrar sesión
+      </a>
+    </div>
+  </div>
+  }
+</div>

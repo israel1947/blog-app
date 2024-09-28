@@ -23,7 +23,7 @@
                     <button (click)="like()"><i class="ri-thumb-up-line ri-xl">{{postData?.likes}}</i></button>
                     <button (click)="coments()"><i class="ri-chat-3-line ri-xl">{{postData?.comments}}</i></button>
                     @if (showFiller) {
-                    <app-coments class="absolute right-0 top-0 h-[100vh]" [comentData]="comentData"></app-coments>
+                    <app-coments class="absolute right-0 top-0 h-[100vh]" [comentData]="comentData" (valueClickClose)="close($event)"></app-coments>
                     }
                     <i class="ri-eye-line ri-xl">{{postData?.views}}</i>
                   </div>

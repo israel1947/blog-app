@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { inject, Injectable } from '@angular/core';
 import { environment } from '../../enviroments/enviroments';
 import { CarrucelData, Comment, Post, Posts } from '../interfaces/interface';
 import { Observable } from 'rxjs/internal/Observable';
@@ -10,8 +10,7 @@ import { Observable } from 'rxjs/internal/Observable';
 export class PostsService{
 
   private URL = environment.URL;
-
-  constructor(private http: HttpClient) { };
+  http = inject(HttpClient)
 
   getAllPosts():Observable<Post[]> {
     return this.http.get<Post[]>(`${this.URL}/posts`);

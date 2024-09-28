@@ -48,4 +48,8 @@ export class PostComponent {
     this.showFiller = !this.showFiller;
   };
 
+  close(newValue:boolean){
+    this.showFiller = newValue;
+  }
+
 }

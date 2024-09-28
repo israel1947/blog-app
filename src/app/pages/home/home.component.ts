@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, Renderer2, ViewChild } from '@angular/core';
+import { Component, ElementRef, inject, OnInit, Renderer2, ViewChild } from '@angular/core';
 import { MatTabsModule } from '@angular/material/tabs';
 import { CarrucelData, Post } from '../../interfaces/interface';
 import { PostsService } from '../../services/posts.service';
@@ -6,17 +6,22 @@ import { CardComponent } from "../../components/card/card.component";
 import { CommonModule } from '@angular/common';
 import { CarrucelComponent } from "../../components/carrucel/carrucel.component";
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import {MatDividerModule} from '@angular/material/divider';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [MatTabsModule, CardComponent, CarrucelComponent, MatProgressSpinnerModule],
+  imports: [MatTabsModule, CardComponent, CarrucelComponent, MatProgressSpinnerModule,MatDividerModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
 export class HomeComponent implements OnInit {
   @ViewChild('cont2r') content!: ElementRef;
   @ViewChild('slide') slide!: ElementRef;
+
+  /* Services */
+  private readonly postsServices:PostsService = inject(PostsService);
+  private readonly render:Renderer2 = inject(Renderer2);
 
 
   listItems = ['All', 'Negocios', 'Tecnología', 'Arte', 'Cultura', 'Salud', 'Cocina', 'Finanzas', 'Desarrollo Personal', 'Educación'];
@@ -29,10 +34,6 @@ export class HomeComponent implements OnInit {
   mostViews: Post[] = [];
   WeeklyHighlight: Post[] = [];
   latesNews: Post[] = [];
-
-
-  constructor(private postsServices: PostsService, private render: Renderer2) { };
-
 
   ngOnInit(): void {
     this.allPosts();
