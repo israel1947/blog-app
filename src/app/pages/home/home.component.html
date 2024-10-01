@@ -20,7 +20,7 @@
     </div>
     <div #cont2r class="container--cards">
       @for (post of posts.slice(-3); track $index) {
-      <app-card [classType]="pba ? clasType2Card : clasTypeCard" [post]="post" />
+      <app-card [cardType]="'primary'" [classType]="pba ? clasType2Card : clasTypeCard" [post]="post" />
       }
     </div>
   </div>
@@ -28,7 +28,7 @@
   <div class="flex items-center justify-center">
     <h1 class="text-blue-500 font-bold text-3xl">No hay nada</h1>
   </div>
-  }
+  } 
 </section>
 
 @if (WeeklyHighlight.length >=1 || latesNews.length >=1 || mostViews.length >=1) {
@@ -36,7 +36,7 @@
   <div class="flex flex-col gap-4 basis-[20%]">
     <h2 class="text-3xl font-bold mb-4">Most Read</h2>
     @for (postMostViews of mostViews.slice(-3); track $index) {
-    <app-card [post]="postMostViews" [classType]="clasType2Card"></app-card>
+    <app-card [cardType]="'primary'"  [post]="postMostViews" [classType]="clasType2Card"></app-card>
     <!-- <mat-divider></mat-divider> -->
     }
   </div>
@@ -45,7 +45,7 @@
   <div class="flex flex-col gap-4 basis-[60%]">
     <h2 class="text-3xl font-bold mb-4">Lates News</h2>
     @for (postlatesNews of latesNews.slice(-4); track $index) {
-    <app-card [cardSecond]="true" [post]="postlatesNews" [classType]="clasType2Card"></app-card>
+    <app-card  [cardType]="'secondary'" [post]="postlatesNews" [classType]="clasType2Card"></app-card>
     }
   </div>
   }
@@ -55,7 +55,7 @@
   <div class="flex flex-col gap-4 basis-[20%]">
     <h2 class="text-3xl font-bold mb-4">Weekly Highlight</h2>
     @for (postWeeklyHighlight of WeeklyHighlight; track $index) {
-    <app-card [cardTerthy]="true" [cardPrimary]="true" [post]="postWeeklyHighlight"></app-card>
+    <app-card  [cardType]="'tertiary'"  [post]="postWeeklyHighlight"></app-card>
     }
   </div>
   }

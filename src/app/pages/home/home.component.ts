@@ -1,6 +1,6 @@
 import { Component, ElementRef, inject, OnInit, Renderer2, ViewChild } from '@angular/core';
 import { MatTabsModule } from '@angular/material/tabs';
-import { CarrucelData, Post } from '../../interfaces/interface';
+import { CarrucelData, Post, User } from '../../interfaces/interface';
 import { PostsService } from '../../services/posts.service';
 import { CardComponent } from "../../components/card/card.component";
 import { CommonModule } from '@angular/common';
@@ -26,7 +26,7 @@ export class HomeComponent implements OnInit {
 
   listItems = ['All', 'Negocios', 'Tecnología', 'Arte', 'Cultura', 'Salud', 'Cocina', 'Finanzas', 'Desarrollo Personal', 'Educación'];
   posts: any[] = [];
-  slideData: any[] = [];
+  slideData: CarrucelData[] = [];
   clasTypeCard: string[] = ['container--card', 'flex', 'items-center', 'justify-center', 'gap-[10px]', 'cursor-pointer'];
   clasType2Card: string[] = ['container--card', 'flex', 'items-center', 'justify-center', 'gap-[10px]', 'flex-col', 'cursor-pointer'];
   pba: boolean = false;

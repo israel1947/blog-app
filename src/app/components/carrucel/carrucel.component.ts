@@ -1,8 +1,9 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, inject, Input, OnInit } from '@angular/core';
 import { CustomDatePipe } from '../../pipes/custom-date.pipe';
-import { CarrucelData } from '../../interfaces/interface';
-import { RouterModule } from '@angular/router';
+import { CarrucelData, User } from '../../interfaces/interface';
+import { ActivatedRoute, RouterModule } from '@angular/router';
+import { PostsService } from '../../services/posts.service';
 
 
 
@@ -13,11 +14,25 @@ import { RouterModule } from '@angular/router';
   templateUrl: './carrucel.component.html',
   styleUrl: './carrucel.component.scss'
 })
-export class CarrucelComponent {
+export class CarrucelComponent implements OnInit {
 
   @Input() slideData2!: CarrucelData[];
-
   currentIndex: number = 0;
+  private postServices: PostsService = inject(PostsService);
+
+  ngOnInit(): void {
+    this.loadUser();
+  }
+
+  loadUser() {
+    if (this.slideData2.length > 0) {
+      this.slideData2.forEach((post) => {
+        this.postServices.getProfilUser(post.id).subscribe((data: any) => {
+          post.author = data[0]
+        });
+      });
+    }
+  }
 
 
   nextBtn(slide: any, i: number) {
@@ -36,5 +51,3 @@ export class CarrucelComponent {
     this.currentIndex = i - 1;
   };
 }
-
-export { CarrucelData };

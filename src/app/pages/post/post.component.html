@@ -12,18 +12,19 @@
           <div class="content-info flex items-center gap-1">
             <div class="content-img">
               <div class="img-perfil w-[48px] h-[48px] rounded-[50%] bg-cover bg-no-repeat object-center"
-                [ngStyle]="{'background-image': 'url(' + postData?.author?.photo + ')'}"></div>
+                [ngStyle]="{'background-image': 'url(' + userData?.photo + ')'}"></div>
             </div>
             <div class="perfil flex justify-between">
               <div class="name-perfil  flex flex-col gap-1">
-                <strong>{{postData?.author?.name}}</strong>
+                <strong>{{userData?.name}} {{userData?.last_name}}</strong>
                 <span>{{postData?.created_at | date:'mediumDate'}}</span>
                 <div class="reviews-post flex items-center justify-between">
                   <div class="perfil-reactions flex items-center gap-2">
                     <button (click)="like()"><i class="ri-thumb-up-line ri-xl">{{postData?.likes}}</i></button>
                     <button (click)="coments()"><i class="ri-chat-3-line ri-xl">{{postData?.comments}}</i></button>
                     @if (showFiller) {
-                    <app-coments class="absolute right-0 top-0 h-[100vh]" [comentData]="comentData" (valueClickClose)="close($event)"></app-coments>
+                    <app-coments class="absolute right-0 top-0 h-[100vh]" [comentData]="comentData"
+                      (valueClickClose)="close($event)"></app-coments>
                     }
                     <i class="ri-eye-line ri-xl">{{postData?.views}}</i>
                   </div>

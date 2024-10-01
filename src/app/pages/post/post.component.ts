@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { PostsService } from '../../services/posts.service';
 import { ActivatedRoute } from '@angular/router';
-import { Comment, Post } from '../../interfaces/interface';
+import { Comment, Post, User } from '../../interfaces/interface';
 import { CommonModule } from '@angular/common';
 import { CustomDatePipe } from '../../pipes/custom-date.pipe';
 import { MatChipsModule } from '@angular/material/chips';
@@ -16,6 +16,7 @@ import { ComentsComponent } from '../../components/coments/coments.component';
 })
 export class PostComponent {
   postData: Post | undefined;
+  userData: User | undefined;
   comentData: Comment[] = [];
   route: ActivatedRoute = inject(ActivatedRoute);
   showFiller = false;
@@ -24,6 +25,11 @@ export class PostComponent {
     const postDetailId = parseInt(this.route.snapshot.params['id'], 10);
     this.postServices.getPostById(postDetailId).subscribe((post) => {
       this.postData = post;
+    });
+    this.postServices.getProfilUser(postDetailId).subscribe((users:User[]) => {
+      users.map((resp) => {
+        return this.userData = resp
+      });
     });
   }
 
@@ -48,7 +54,7 @@ export class PostComponent {
     this.showFiller = !this.showFiller;
   };
 
-  close(newValue:boolean){
+  close(newValue: boolean) {
     this.showFiller = newValue;
   }
 

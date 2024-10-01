@@ -16,9 +16,7 @@ import {MatDividerModule} from '@angular/material/divider';
 export class CardComponent {
   @Input() post!: any;
   @Input() classType!: string[];
-  @Input() cardPrimary!: boolean;
-  @Input() cardSecond!: boolean;
-  @Input() cardTerthy!: boolean;
+  @Input() cardType: 'primary' | 'secondary' | 'tertiary' = 'primary';
 
 
 
