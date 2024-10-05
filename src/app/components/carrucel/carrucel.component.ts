@@ -18,6 +18,7 @@ export class CarrucelComponent implements OnInit {
 
   @Input() slideData2!: CarrucelData[];
   currentIndex: number = 0;
+  userId!:number;
   private postServices: PostsService = inject(PostsService);
 
   ngOnInit(): void {
@@ -27,7 +28,8 @@ export class CarrucelComponent implements OnInit {
   loadUser() {
     if (this.slideData2.length > 0) {
       this.slideData2.forEach((post) => {
-        this.postServices.getProfilUser(post.id).subscribe((data: any) => {
+        this.userId = post.user_id
+        this.postServices.getProfilUser(this.userId).subscribe((data: any) => {
           post.author = data[0]
         });
       });

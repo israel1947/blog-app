@@ -20,16 +20,21 @@ export class PostComponent {
   comentData: Comment[] = [];
   route: ActivatedRoute = inject(ActivatedRoute);
   showFiller = false;
+  userId!:number;
 
   constructor(private postServices: PostsService, private comentsService: PostsService) {
-    const postDetailId = parseInt(this.route.snapshot.params['id'], 10);
+    const postDetailId = this.route.snapshot.params['id'];
+
     this.postServices.getPostById(postDetailId).subscribe((post) => {
       this.postData = post;
-    });
-    this.postServices.getProfilUser(postDetailId).subscribe((users:User[]) => {
-      users.map((resp) => {
-        return this.userData = resp
-      });
+      this.userId = post.user_id;
+      if (this.userId) {
+        this.postServices.getProfilUser(this.userId).subscribe((users: User[]) => {
+          users.map((resp) => {
+            this.userData = resp;
+          });
+        });
+      }
     });
   }
 

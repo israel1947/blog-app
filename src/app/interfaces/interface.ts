@@ -33,8 +33,12 @@ export interface User {
   name: string;
   last_name: string;
   email: string;
-  password: string;
+  password?: string;
   photo: string;
+}
+
+export interface GoogleUser extends Omit<User, 'id'>{
+  id:string
 }
 
 
@@ -48,5 +52,13 @@ export interface CarrucelData {
   description: string,
   category?: string
   user_id: number;
+}
+
+export interface responseData {
+  id: string,
+  name: string,
+  last_name: string,
+  email: string,
+  photo: string,
 }
 
